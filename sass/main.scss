@@ -144,9 +144,35 @@ p {
 
     color: #131313;
   }
-  &__button {
-    padding: 5px;
-    border: none;
-    background-color: transparent;
+}
+.product__button {
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+
+  & .arrow {
+    &--hover,
+    &--focus {
+      opacity: 0;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    .arrow--default {
+      opacity: 0;
+    }
+  }
+
+  &:hover {
+    .arrow--hover {
+      opacity: 1;
+    }
+  }
+
+  &:focus {
+    .arrow--focus {
+      opacity: 1;
+    }
   }
 }

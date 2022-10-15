@@ -125,8 +125,21 @@ p {
   letter-spacing: 0.04em;
   color: #131313;
 }
+
 .product__button {
   padding: 5px;
   border: none;
   background-color: transparent;
+}
+.product__button .arrow--hover, .product__button .arrow--focus {
+  opacity: 0;
+}
+.product__button:hover .arrow--default, .product__button:focus .arrow--default {
+  opacity: 0;
+}
+.product__button:hover .arrow--hover {
+  opacity: 1;
+}
+.product__button:focus .arrow--focus {
+  opacity: 1;
 }/*# sourceMappingURL=main.css.map */
